@@ -11,7 +11,7 @@ const keyboard = ['Q', '2', 'W', '3', 'E', 'R', '5', 'T', '6', 'Y', '7', 'U',
 '/', ';'];
 
 const keyboardButton = document.getElementById('keyboard');
-let isKeyboardButton;
+let isKeyboardButton = true;
 
 function onload() {
   if (isKeyboardButton) {
