@@ -22,7 +22,7 @@ a {
   justify-content: space-around;
   position: absolute;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   height: 3.4vmax;
   font-size: 1.7vmax;
   font-weight: 500;
@@ -84,7 +84,7 @@ a {
 #piano {
     position: absolute;
     display: flex;
-    width: 100%;
+    width: 100vw;
     height: 37.5%;
     bottom: 0%;
     border: 1px solid black;
@@ -132,6 +132,10 @@ a {
   color: transparent;
 }
 
+#rotatePhone {
+  display: none;
+}
+
 @media only screen and (orientation: portrait) {
   .menu {
     flex-direction: column;
@@ -165,9 +169,22 @@ a {
   #blackWindow.active {
       height: 100vmax;
       width: 100vmin;
-      z-index: 10;
       background-color: rgba(0, 0, 0, 0.105);
       transition: 0.3s;
+  }
+
+  #piano, #keyboard {
+    display: none;
+  }
+
+  #rotatePhone {
+    font-size: 8.5vmin;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
   }
 }
   

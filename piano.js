@@ -22,7 +22,7 @@ const notes = ['C', 'CSharp', 'D', 'DSharp', 'E', 'F', 'FSharp', 'G', 'GSharp', 
 const keyboard = ['Q', '2', 'W', '3', 'E', 'R', '5', 'T', '6', 'Y', '7', 'U',
 'I', '9', 'O', '0', 'P', '[', '=', ']', 'A', 'Z', 'S', 'X',
 'C', 'F', 'V', 'G', 'B', 'N', 'J', 'M', 'K', ',', 'L', '.',
-'/', ';'];
+'/', "'"];
 
 const keyboardButton = document.getElementById('keyboard');
 let isKeyboardButton = true;
@@ -56,7 +56,7 @@ function playNote(note) {
 }
 
 keys.forEach(key => {
-  key.addEventListener('click', () => {
+  key.addEventListener('mousedown', () => {
     const note = key.dataset.note;
     playNote(note);
   });
