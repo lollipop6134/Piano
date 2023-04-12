@@ -20,7 +20,7 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  position: absolute;
+  position: fixed;
   align-items: center;
   width: 100vw;
   height: 3.4vmax;
