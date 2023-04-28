@@ -24,6 +24,11 @@ const keyboard = ['Q', '2', 'W', '3', 'E', 'R', '5', 'T', '6', 'Y', '7', 'U',
 'C', 'F', 'V', 'G', 'B', 'N', 'J', 'M', 'K', ',', 'L', '.',
 '/', "'"];
 
+const keyboardru = ['Й', '2', 'Ц', '3', 'У', 'К', '5', 'Е', '6', 'Н', '7', 'Г',
+'Ш', '9', 'Щ', '0', 'З', 'Х', '=', 'Ъ', 'Ф', 'Я', 'Ы', 'Ч',
+'С', 'А', 'М', 'П', 'И', 'Т', 'О', 'Ь', 'Л', 'Б', 'Д', 'Ю',
+'.', 'Э'];
+
 const keyboardButton = document.getElementById('keyboard');
 let isKeyboardButton = true;
 
@@ -64,8 +69,14 @@ keys.forEach(key => {
 
 function playNoteByKey(key) {
   const index = keyboard.indexOf(key);
+  const index2 = keyboardru.indexOf(key);
   if (index !== -1) {
     const note = notes[index];
+    playNote(note);
+  }
+  else if (index2 !== -1)
+  {
+    const note = notes[index2];
     playNote(note);
   }
 }

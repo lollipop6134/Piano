@@ -81,11 +81,13 @@ a {
 }
 
 .footer {
+  display: flex;
   height: 3vmax;
   background-color: rgb(167, 140, 255);
   width: 100%;
-  text-align: center;
+  justify-content: center;
   align-items: center;
+  text-align: center;
   position: absolute;
   bottom: 0;
 }
